@@ -10,8 +10,30 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="chetan.example.glidesimpledemo.MainActivity">
 
-    <TextView
+   <Button
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:id="@+id/loadimageusingglidebutton"
+       android:text="Click to Load Image Using Glide"/>
+
+    <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"/>
+        android:id="@+id/glideimageview"
+        android:layout_below="@id/loadimageusingglidebutton"
+        android:src="@drawable/defaultimage"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/loadimageusingpicassobutton"
+        android:layout_below="@id/glideimageview"
+        android:text="Click to Load Image Using Picasso"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/picassoimageview"
+        android:layout_below="@id/loadimageusingpicassobutton"
+        android:src="@drawable/defaultimage"/>
+
 </RelativeLayout>
